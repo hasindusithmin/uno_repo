@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="https://k7yufgbtqylpgqsrxz6sfq-on.drv.tw/cctv/clientside/webkit.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="my-panel my-center" id="root">
+        <div id="conn" style="color: red;"></div>
+        <form autocomplete="off" action="" >
+            <div class="autocomplete" style="width:300px;">
+                <input id="myBrand" type="text" name="brand" placeholder="Brand">
+            </div>
+            <div class="autocomplete" style="width:300px;">
+                <input id="myModel" type="text" name="model" placeholder="Model">
+            </div>
+            <hr>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <div id="demo"></div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

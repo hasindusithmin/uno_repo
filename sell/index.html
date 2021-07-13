@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/z5SsvhZ/myicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../global.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body >
+   
+    <div class="my-panel my-center">
+      <div class="my-btn my-left"><a href="http://localhost/webio/homepage" style="text-decoration: none;">home</a></div>
+      <div class="my-container my-serif my-xxlarge">Sell</div>
+      <hr>
+      <form autocomplete="off" id="myform">
+        <div class="autocomplete" style="width:600px;">
+          <input id="myBrand" type="text" name="brand" placeholder="Enter Car Brand">
+        </div>
+        <hr>
+        <div class="autocomplete" style="width:600px;">
+
+          <select name="model" class="my-input">
+            <option value="" >select model</option>
+            <option value="sedan">sedan</option>
+            <option value="hatchback">hatchback</option>
+            <option value="wegon">wegon</option>
+          </select>
+        </div>
+        <hr>
+        <div class="autocomplete" style="width:600px;">
+          <select name="condition" class="my-input">
+            <option value="">select condition</option>
+            <option value="new">new</option>
+            <option value="register">registered</option>
+            <option value="unregister">unregistered</option>
+          </select>
+        </div>
+        <hr>
+        <div class="autocomplete" style="width:600px;">
+          <input  type="number" name="price" placeholder="Enter Car Price" class="my-input">
+        </div>
+        <hr>
+        <div class="autocomplete" style="width:600px;">
+          <textarea name="description" cols="60" rows="10" placeholder="Enter Car Description" class="my-input"></textarea>
+        </div>
+        <hr>
+        <iframe src="http://localhost/webio/sell/upload.html" frameborder="0"  width="100%" height="100px"></iframe>
+        <hr>
+        <input type="submit" >
+      </form> 
+    </div>
+      
+      <script type="module" src="./index.js"></script>  
+</body>
+</html>

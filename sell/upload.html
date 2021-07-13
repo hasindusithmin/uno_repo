@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+    <div class="my-panel my-center">
+        <form action="../upload/index.php" method="post" enctype="multipart/form-data">
+            Select image to upload:
+            <input type="file" name="fileToUpload" id="fileToUpload" accept=".jpg,.jpeg,.png,.gif">
+            <input type="submit" value="Upload Image" name="submit">
+        </form>
+    </div>
+    <script>
+        const inputElem = document.querySelector("#fileToUpload");
+        inputElem.onchange  = ()=>{
+
+           let myElem = document.querySelector('input[type=file]').files[0];
+           sessionStorage.setItem("imagename",myElem["name"]);
+           sessionStorage.setItem("imagetype",myElem["type"])
+        
+        }
+    </script>
+</body>
+</html>
